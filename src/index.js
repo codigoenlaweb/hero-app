@@ -1,20 +1,16 @@
 // React
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from "react";
+import ReactDOM from "react-dom/client";
 // React Router Dom
 import { BrowserRouter } from "react-router-dom";
 // Style Css
-import './index.css';
+import "./index.css";
 // My app
-import { HeroesApp } from './HeroesApp';
+import { HeroesApp } from "./HeroesApp";
 
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <HeroesApp />
-    </BrowserRouter>
-  </React.StrictMode>
+  <BrowserRouter>
+    <HeroesApp />
+  </BrowserRouter>
 );
-
