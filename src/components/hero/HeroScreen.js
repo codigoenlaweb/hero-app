@@ -20,8 +20,11 @@ export const HeroScreen = () => {
 
   return (
     <main className="px-2 md:px-4 py-2 md:py-4 flex items-center">
-      <section className={`${!hero.heroeError && "hidden"}`}>
-        <h2>Hero not found</h2>
+      <section className={`${!hero.heroeError && "hidden"} w-full text-center flex flex-col justify-center items-center h-screen`}>
+        <h2 className=" font-bold text-4xl md:text-6xl text-pink-500">Hero not found (;-;)</h2>
+        <button onClick={handleGoback} className="mt-5 font-bold text-pink-500 py-1 px-2 border border-solid border-pink-500 rounded-md outline-white hover:bg-pink-500 focus:bg-pink-500 hover:text-white focus:text-white transition duration-300">
+            Go back
+        </button>
       </section>
       <section
         className={`${

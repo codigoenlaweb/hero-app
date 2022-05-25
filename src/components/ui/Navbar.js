@@ -14,7 +14,7 @@ export const Navbar = () => {
             <NavLink
               to="/marvel"
               className={({ isActive }) =>
-                isActive ? " text-pink-500" : undefined
+                isActive ? " text-pink-500" : "hover:text-white focus:text-white"
               }
             >
               Marvel
@@ -24,7 +24,7 @@ export const Navbar = () => {
             <NavLink
               to="/dc"
               className={({ isActive }) =>
-                isActive ? " text-pink-500" : undefined
+                isActive ? "text-pink-500" : "hover:text-white focus:text-white"
               }
             >
               DC
