@@ -39,19 +39,28 @@ export const SearchScreen = () => {
         </button>
       </form>
 
-      {
-        (!q) && <div className="mt-6 md:mt-10 text-center text-pink-500 font-bold text-4xl md:text-5xl">look for your favorite hero</div>
-      }
+      {!q && (
+        <div className="animate__animated animate__fadeIn animate__fast mt-6 md:mt-10 text-center text-pink-500 font-bold text-4xl md:text-5xl">
+          look for your favorite hero
+        </div>
+      )}
 
-      {
-        (q.length >= 1 && heroes.length <= 0) && <div className="mt-6 md:mt-10 text-center text-pink-500 font-bold text-4xl md:text-5xl">Hero not found (;-;)</div>
-      }
+      {q.length >= 1 && heroes.length <= 0 && (
+        <div className="animate__animated animate__fadeIn animate__fast mt-6 md:mt-10 text-center text-pink-500 font-bold text-4xl md:text-5xl">
+          Hero not found (;-;)
+        </div>
+      )}
 
-      <section className="mx-auto mt-7 md:mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 items-center justify-center w-full max-w-6xl">
-      {heroes.map((hero) => (
-        <HeroCard key={hero.id} {...hero} />
-      ))}
-    </section>
+      {q.length >= 1 && heroes.length >= 0 && (
+        <section className="animate__animated animate__fadeIn animate__fast mx-auto mt-7 md:mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 items-center justify-center w-full max-w-6xl">
+          {heroes.map((hero) => (
+            <HeroCard
+              key={hero.id}
+              {...hero}
+            />
+          ))}
+        </section>
+      )}
     </main>
   );
 };

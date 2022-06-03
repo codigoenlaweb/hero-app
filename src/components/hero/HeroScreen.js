@@ -34,9 +34,9 @@ export const HeroScreen = () => {
         <img
           src={imgPath}
           alt={hero.superhero}
-          className="w-full md:w-2/5 lg:w-1/4 mx-auto rounded-md max-w-sm max-h-screen shadow-md"
+          className="w-full md:w-2/5 lg:w-1/4 mx-auto rounded-md max-w-sm max-h-screen shadow-md animate__animated animate__fadeInLeft animate__fast"
         />
-        <article className="md:w-3/5 lg:w-3/4 md:pl-6 ">
+        <article className="md:w-3/5 lg:w-3/4 md:pl-6 animate__animated animate__fadeInRight animate__fast">
           <h3 className="mt-4 text-2xl md:text-2xl font-bold">
             {hero.superhero}
           </h3>
