@@ -20,7 +20,7 @@ export const HeroScreen = () => {
 
   return (
     <main className="px-2 md:px-4 py-2 md:py-4 flex items-center">
-      <section className={`${!hero.heroeError && "hidden"} w-full text-center flex flex-col justify-center items-center h-screen`}>
+      <section className={`${!hero.heroeError && "hidden"} animate-transitionflash w-full text-center flex flex-col justify-center items-center h-screen`}>
         <h2 className=" font-bold text-4xl md:text-6xl text-pink-500">Hero not found (;-;)</h2>
         <button onClick={handleGoback} className="mt-5 font-bold text-pink-500 py-1 px-2 border border-solid border-pink-500 rounded-md outline-white hover:bg-pink-500 focus:bg-pink-500 hover:text-white focus:text-white transition duration-300">
             Go back
@@ -29,14 +29,14 @@ export const HeroScreen = () => {
       <section
         className={`${
           !hero.id && "hidden"
-        } w-full mx-auto mt-2 md:mt-4 max-w-6xl flex flex-col md:flex-row`}
+        } w-full mx-auto mt-2 md:mt-4 max-w-6xl flex flex-col md:flex-row overflow-x-hidden`}
       >
         <img
           src={imgPath}
           alt={hero.superhero}
-          className="w-full md:w-2/5 lg:w-1/4 mx-auto rounded-md max-w-sm max-h-screen shadow-md animate__animated animate__fadeInLeft animate__fast"
+          className="w-full md:w-2/5 lg:w-1/4 mx-auto rounded-md max-w-sm max-h-screen shadow-md animate-transitionInLeft"
         />
-        <article className="md:w-3/5 lg:w-3/4 md:pl-6 animate__animated animate__fadeInRight animate__fast">
+        <article className="md:w-3/5 lg:w-3/4 md:pl-6 animate__animated animate-transitionInRight animate__fast">
           <h3 className="mt-4 text-2xl md:text-2xl font-bold">
             {hero.superhero}
           </h3>

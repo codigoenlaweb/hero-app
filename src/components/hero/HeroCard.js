@@ -1,14 +1,12 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 export const HeroCard = ({ id, superhero, alter_ego, characters }) => {
   const imagePath = `assets/${id}.jpg`;
   const urlPath = `/hero/${id}`;
-  const pi = useRef(null)
 
   return (
     <article
-      ref={pi}
       className="overflow-x-hidden overflow-y-hidden group mx-auto mb-4 md:mb-7 w-72 md:w-60 lg:w-56 border-solid border border-gray-500 bg-gray-200 rounded shadow-md hover:shadow-2xl hover:bg-white font-bold hover:scale-105 transition duration-150 ease-linear"
     >
       <img src={imagePath} alt={superhero} />
