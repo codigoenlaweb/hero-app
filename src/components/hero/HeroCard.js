@@ -17,7 +17,7 @@ export const HeroCard = ({ id, superhero, alter_ego, characters }) => {
           <p className="group-hover:animate-transitionInTop">{characters}</p>
         )}
         <Link to={urlPath} className="font-normal text-pink-600">
-          Mas...
+          More...
         </Link>
       </div>
     </article>
