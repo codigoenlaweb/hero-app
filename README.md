@@ -15,9 +15,9 @@
 
 ## About The Project.
 #### Description
-Hero app is a **SPA** where you can see search for your marvel and dc heroes. In this project, public and private routes were used to manage the use of login.
+The Hero app is a **SPA** where you can see the research of your marvel and DC heroes. In this project, public and private routes were used to manage the use of login.
 #### Purpose of this project.
-This project was made with the purpose of putting into practice the knowledge learned about the -use of routes with the [React Router](https://reactrouter.com/ "React Router") library.
+This project was made with the purpose of putting into practice the knowledge learned about the use of routes with the [React Router](https://reactrouter.com/ "React Router") library.
 #### built with.
 For this project I use  [ Create React App](https://create-react-app.dev/ " Create React App") and for the layout of styles it was used [TailwindCSS](https://tailwindcss.com/ "TailwindCSS").
 
