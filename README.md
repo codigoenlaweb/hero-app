@@ -3,7 +3,9 @@
 ![View project](https://github.com/codigoenlaweb/hero-app/blob/master/public/assets/imgreadme1.jpeg)
 
 <h4 align="center">Your website to see your favorite heroes</h4>
-<a align="center" href="View Demo">View Demo</a>
+<div align="center">
+    <a align="center" href="https://hero-app-react.netlify.app">View Demo</a>
+</div>
 
 ## Table of Contents:
 - About The Project
