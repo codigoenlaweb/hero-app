@@ -1,5 +1,7 @@
 <h1 align="center">Hero app</h1> 
+
 [![view project](view project "view project")](https://github.com/codigoenlaweb/hero-app/blob/master/public/assets/imgreadme1.jpeg "view project")
+
 <h4 align="center">Your website to see your favorite heroes</h4>
 <a align="center" href="View Demo">View Demo</a>
 ## Table of Contents:
